@@ -9,121 +9,6 @@ body {
   background-color: rgba(226, 168, 121, 0.5);
   font-family: "Montserrat", sans-serif;
 }
-/* }
-.backgorund {
-  width: 100%;
-  height: 100vh;
-}
-
-.icons {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.fas,
-.far {
-  position: absolute;
-  display: block;
-  list-style: none;
-  animation: animate 25s linear infinite;
-  bottom: -150px;
-}
-
-.icons span:nth-child(1) {
-  left: 25%;
-  font-size: 100px;
-  animation-delay: 0s;
-}
-
-.icons span:nth-child(2) {
-  left: 5%;
-  font-size: 80px;
-  animation-delay: 2s;
-  animation-duration: 12s;
-}
-
-.icons span:nth-child(3) {
-  left: 70%;
-  font-size: 80px;
-  animation-delay: 4s;
-}
-
-.icons span:nth-child(4) {
-  left: 40%;
-  font-size: 150px;
-  animation-delay: 0s;
-  animation-duration: 10s;
-}
-
-.icons span:nth-child(5) {
-  left: 45%;
-  font-size: 80px;
-  animation-delay: 0s;
-}
-
-.icons span:nth-child(6) {
-  left: 75%;
-  font-size: 150px;
-  animation-delay: 3s;
-}
-
-.icons span:nth-child(7) {
-  left: 35%;
-  font-size: 200px;
-  animation-delay: 7s;
-  animation-duration: 20s;
-}
-
-.icons span:nth-child(8) {
-  left: 30%;
-  font-size: 90px;
-  animation-delay: 8s;
-  animation-duration: 45s;
-}
-
-.icons span:nth-child(9) {
-  left: 20%;
-  font-size: 40px;
-  animation-delay: 2s;
-  animation-duration: 35s;
-}
-
-.icons span:nth-child(10) {
-  right: 5%;
-  font-size: 80px;
-  animation-delay: 2s;
-  animation-duration: 12s;
-}
-
-span {
-  color: #9e00bc;
-  text-shadow: 0 0 120px #9e00bc;
-  font-size: 50px;
-  transition: 1s;
-}
-
-span:hover {
-  
-}
-
-@keyframes animate {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-    border-radius: 0;
-  }
-  100% {
-    transform: translateY(-1000px) rotate(720deg);
-    opacity: 0;
-    border-radius: 50%;
-  }
-} */
-
-/*--------------------------------------------------------*/
 
 .form {
   position: absolute;
@@ -141,18 +26,15 @@ span:hover {
 .form__title {
   width: 100%;
   height: 15%;
- 
   color: aliceblue;
   background: linear-gradient(to right, #fd7778, #fea982);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   position: relative;
-  
-  
 }
 
 .form__items {
-  padding: 10%;
+  padding: 10% 10% 3%;
 }
 
 .title {
@@ -165,8 +47,48 @@ span:hover {
     transform: translate(-50%, -50%)
 }
 
-.form__input {
+#input1, #input2 {
   display: block;
   margin: 10px 0;
-  height: 20px;
+  height: 34px;
+  width: 100%;
+  font-family: inherit;
+  
 }
+
+#math {
+  width: 101%;
+  height: 34px;
+  text-align: center;
+  margin: 10px 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+#submit {
+  display: block;
+  margin: 10% auto 5%;
+  width: 65%;
+  height: 40px;
+  background: linear-gradient(to right, #fd7778, #fea982);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: aliceblue;
+  font-family: inherit;
+  font-size: 24px;
+  border-radius: 15px;
+}
+
+#result {
+  display: block;
+  margin: 0 auto;
+  width: 65%;
+  height: 70px;
+  border: 1px solid #fea982;
+  font-family: inherit;
+  font-size: 30px;
+  text-align: center;
+}
+
+
