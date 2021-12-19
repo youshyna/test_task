@@ -1,10 +1,8 @@
-let num1;
-let num2;
-let selectValue;
-let result;
-
-
 function btnClick() {
+  let num1;
+  let num2;
+  let result;
+
   num1 = parseInt(document.getElementById('input1').value);
   console.log(num1);
   num2 = parseInt(document.getElementById('input2').value);
