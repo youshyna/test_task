@@ -16,10 +16,7 @@
       <h1 class="title">simple calculator</h1>
     </div>
     <div class="form__items">
-      <label class="form__text">
-        Enter first number -
-        <input id="input1" type="number" name="first-number" id="num1" placeholder="Enter number" required>
-      </label>
+        <input id="input1" type="number" name="first-number" id="num1" placeholder="Enter first number" required oninvalid="this.setCustomValidity('Please, enter integer number!')">
       <select id="math" name="math" required onchange="setValue()">
         <option value="hide">Choose operation</option>
         <option value="+">+</option>
@@ -27,13 +24,10 @@
         <option value="*">*</option>
         <option value="/">/</option>
       </select>
-      <label class="form__text">
-        Enter second number -
-        <input id="input2" type="number" name="second-number" id="num2" placeholder="Enter number" required>
-      </label>
+        <input id="input2" type="number" name="second-number" id="num2" placeholder="Enter second number" required>
       <input id="submit" value="calculate" type="submit" name="submit">
 
-      <input type="text" id="result" placeholder="Result" readonly>
+      <input type="text" id="result" placeholder="result" readonly>
   </form>
 </body>
 
