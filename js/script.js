@@ -35,20 +35,49 @@ function init() {
   const button = document.getElementById("submit");
   button.onclick = btnClick;
 }
+
 window.onload = init;
 
 
-function invalidMsg(textbox) {
-  if (textbox.value === '') {
-    textbox.setCustomValidity('Please, enter integer number!');
-  } else {
-    textbox.setCustomValidity('');
-  }
-}
-
-function isNumberKey(evt){
+function isNumberKey(evt) {
   let charCode = (evt.which) ? evt.which : evt.keyCode;
   return !((charCode == 46));
 }
 
+function initiate() {
+  firstNum = document.getElementById("input1");
+  secondNum = document.getElementById("input2");
+  firstNum.addEventListener("input", validation, false); secondNum.addEventListener("input", validation, false);
+  validation();
 
+}
+
+function validation() {
+
+  if (firstNum.value == "") {
+
+    firstNum.setCustomValidity("Please, enter integer number!");
+    firstNum.style.border = "1px solid #fd7778";
+
+  } else {
+
+    firstNum.setCustomValidity("");
+
+    firstNum.style.border = "1px solid rgb(89, 199, 89)";
+  }
+
+  if (secondNum.value == "") {
+
+    secondNum.setCustomValidity("Please, enter integer number!");
+    secondNum.style.border = "1px solid #fd7778";
+
+  } else {
+
+    secondNum.setCustomValidity("");
+
+    secondNum.style.border = "1px solid rgb(89, 199, 89)";
+  }
+
+}
+
+window.addEventListener("load", initiate, false);

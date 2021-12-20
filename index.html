@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/js/script.js"></script>
-    <link rel="stylesheet" href="/css/style.css">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
   <title>Calculator</title>
 </head>
 
@@ -16,15 +16,15 @@
       <h1 class="title">simple calculator</h1>
     </div>
     <div class="form__items">
-        <input id="input1" type="number" name="first-number" placeholder="Enter first number" required oninvalid="invalidMsg(this);" oninput="invalidMsg(this);" onkeypress="return isNumberKey(event)">
+        <input id="input1" type="number" name="first-number" placeholder="Enter first number" required onkeypress="return isNumberKey(event)">
       <select id="math" name="math" required onchange="setValue()">
-        <option value="hide" disabled selected>Choose operation</option>
-        <option value="+">+</option>
+        <option value="" disabled selected>Choose operation</option>
+        <option value="+"> +</option>
         <option value="-">-</option>
         <option value="*">*</option>
         <option value="/">/</option>
       </select>
-        <input id="input2" type="number" name="second-number" placeholder="Enter second number" required oninvalid="invalidMsg(this);" oninput="invalidMsg(this);" onkeypress="return isNumberKey(event)">
+        <input id="input2" type="number" name="second-number" placeholder="Enter second number" required onkeypress="return isNumberKey(event)">
       <input id="submit" value="calculate" type="submit" name="submit">
 
       <input type="text" id="result" placeholder="result" readonly>
